@@ -100,6 +100,7 @@ li.location:hover ul {
   height: 300px;
   overflow: scroll;
   display: none;
+  border: 1px solid #eee;
   background-color: #fff;
   box-sizing: border-box;
   z-index: 10;
@@ -145,6 +146,7 @@ li.myTaobao:hover ul {
   height: 70px;
   display: none;
   background-color: #fff;
+  border: 1px solid #eee;
 }
 .hover_myTaobao_menu > li {
   padding: 0 6px;
@@ -181,6 +183,7 @@ li.collection:hover ul {
   width: 75px;
   height: 68px;
   display: none;
+  border: 1px solid #eee;
   background-color: #fff;
 }
 .hover_collection_menu > li {
@@ -218,6 +221,7 @@ li.qnSellerCenter:hover ul {
   width: 85px;
   height: 260px;
   display: none;
+  border: 1px solid #eee;
   background-color: #fff;
 }
 .hover_qnSellerCenter_menu > li {
@@ -249,6 +253,7 @@ li.customerService:hover ul {
   width: 72px;
   height: 70px;
   display: none;
+  border: 1px solid #eee;
   background-color: #fff;
 }
 .hover_customerService_menu > li {
@@ -275,6 +280,7 @@ li.webNavigation:hover div {
   width: 1190px;
   height: 365px;
   display: none;
+  border: 1px solid #eee;
   background-color: #fff;
 }
 .hover_webNavigation_menu > div {
@@ -631,7 +637,7 @@ li.webNavigation:hover div {
   background-color: #fff;
   position: absolute;
   top: 0;
-  left: 190px;
+  left: 188px;
   display: none;
 }
 .second {
@@ -935,14 +941,25 @@ li.webNavigation:hover div {
   width: 288px;
   height: 154px;
 }
+.right_module > ul {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
 .right_module ul > li {
   height: 78px;
-  width: 72px;
-  /* display: inline-block; */
+  width: 73px;
+  margin: 0 -1px -1px 0 ;
   box-sizing: border-box;
   border: 1px solid #f4f4f4;
-  float: left;
+  border-left: none;
   position: relative;
+}
+.right_module ul li:nth-child(4) {
+  border-right: none;
+}
+.right_module ul li:nth-child(8) {
+  border-right: none;
 }
 .right_module ul li > span {
   display: block;
@@ -1063,7 +1080,7 @@ li.webNavigation:hover div {
   height: 159px;
   position: absolute;
   top: 76px;
-  left: -72px;
+  left: -73px;
   border: 1px solid #f40;
   display: none;
   background: #fff;
