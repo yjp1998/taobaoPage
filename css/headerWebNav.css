@@ -18,7 +18,7 @@ li.webNavigation:hover div {
   left: -1102px;
   width: 1190px;
   height: 365px;
-  display: block;
+  display: none;
   border: 1px solid #eee;
   background-color: #fff;
   z-index: 99999;
