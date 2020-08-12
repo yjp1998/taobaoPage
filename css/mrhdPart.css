@@ -1,0 +1,66 @@
+/* 每日好店部分 */
+.hdzb_shop {
+  width: 590px;
+  height: 540px;
+  float: left;
+  background-color: #fff;
+}
+.hdzb_shop_header {
+  width: 100%;
+  padding-left: 20px;
+  margin-top: 20px;
+  float: left;
+}
+.hdzb_shop_header span {
+  height: 24px;
+  line-height: 24px;
+  color: #333;
+  font-size: 13px;
+  font-weight: 400;
+  margin-left: 8px;
+  float: left;
+  cursor: pointer;
+}
+.hdzb_shop_header img {
+  cursor: pointer;
+  float: left;
+}
+.shopList li {
+  padding: 6px 0 20px 12px;
+  margin-left: 8px;
+  width: 271px;
+  height: 222px;
+  float: left;
+}
+.shopList li span {
+  color: #333;
+  line-height: 42px;
+  height: 42px;
+  font-weight: normal;
+  display: block;
+  cursor: pointer;
+}
+.shopList li span:hover {
+  color: #ff5000;
+}
+.shopList_imgWrap img {
+  display: block;
+  float: left;
+  cursor: pointer;
+}
+.shopList_imgWrap img:hover {
+  transition: opacity 0.2s;
+  opacity: 0.8;
+}
+.shopList_imgWrap img:first-child {
+  margin-right: 2px;
+}
+.shopList_imgWrap img:nth-child(2) {
+  width: 89px;
+  height: 89px;
+  margin-bottom: 2px;
+}
+.shopList_imgWrap img:nth-child(3) {
+  width: 89px;
+  height: 89px;
+}

@@ -1,0 +1,142 @@
+/* 中间热卖单品部分 */
+.center_rmdp {
+  width: 100%;
+  height: 962px;
+  margin-top: 10px;
+}
+.center_rmdp_wrap {
+  width: 1190px;
+  height: 962px;
+  margin: 0 auto;
+  background-color: #fff;
+}
+.rmdp_header {
+  width: 1190px;
+  background-color: #fff;
+  border-bottom: 1px solid #f4f4f4;
+  position: relative;
+  overflow: hidden;
+}
+.rmdp_header span {
+  display: block;
+  height: 22px;
+  line-height: 22px;
+  margin: 17px 18px;
+  text-align: left;
+  color: #ff5500;
+  font-size: 20px;
+  font-weight: bold;
+}
+.rmdp_header div {
+  display: flex;
+  padding: 0 0 13px 18px;
+}
+.rmdp_header div a {
+  color: #999;
+  font-size: 12px;
+  margin-bottom: 10px;
+  padding-right: 15px;
+  height: 14px;
+}
+.rmdp_header img {
+  width: 32px;
+  height: 15px;
+  position: absolute;
+  bottom: 18px;
+  right: 12px;
+}
+.rmdp_content {
+  width: 1190px;
+  height: 703px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.rmdp_content_item {
+  width: 239px;
+  height: 352px;
+  box-sizing: border-box;
+  border: 1px solid #f4f4f4;
+  margin: -1px 0 0 -1px;
+  padding: 20px;
+}
+.rmdp_content_item:hover {
+  border: 1px solid #f40;
+  z-index: 1;
+}
+.rmdp_content_item_img img {
+  width: 197px;
+  height: 197px;
+  cursor: pointer;
+}
+.rmdp_content_item_line1 {
+  display: block;
+  height: 40px;
+  line-height: 20px;
+  margin: 8px 0;
+  color: #666;
+  font-size: 14px;
+  cursor: pointer;
+}
+.rmdp_content_item_line2 {
+  height: 18px;
+  margin-bottom: 17px;
+  cursor: pointer;
+}
+.rmdp_content_item_line2 span {
+  font-size: 13px;
+  color: #999;
+  float: left;
+  margin-right: 10px;
+  cursor: pointer;
+}
+.rmdp_line3_price {
+  float: left;
+  position: relative;
+  cursor: pointer;
+}
+.rmdp_line3_price span {
+  color: #ff5000;
+  position: absolute;
+  top: 7px;
+  left: -2px;
+  cursor: pointer;
+}
+.rmdp_line3_price em {
+  position: absolute;
+  top: 0;
+  left: 10px;
+  font-size: 22px;
+  font-style: normal;
+  color: #ff5000;
+  cursor: pointer;
+  font-family: normal;
+}
+.rmdp_line3_proceeds {
+  margin-top: 10px;
+  font-size: 12px;
+  color: #999;
+  float: right;
+  cursor: pointer;
+}
+.rmdp_bottom {
+  width: 1190px;
+  height: 170px;
+  margin-left: 18px;
+  display: flex;
+}
+.rmdp_bottom div {
+  width: 375px;
+  height: 130px;
+  margin: 20px 11px 0 2px;
+  background-color: pink;
+}
+.rmdp_bottom div img {
+  border: 2px solid #fff;
+  width: 100%;
+  height: 130px;
+  cursor: pointer;
+}
+.rmdp_bottom div img:hover {
+  border: 2px solid #f40;
+}
+

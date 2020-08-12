@@ -1,0 +1,79 @@
+/* 中间特色好物部分 */
+.center_tshw {
+  width: 100%;
+  height: 290px;
+  margin-top: 10px;
+}
+.center_tshw_wrap {
+  width: 1190px;
+  height: 290px;
+  margin: 0 auto;
+  position: relative;
+}
+.tshw_leftPart_header {
+  width: 827px;
+  height: 48px;
+  line-height: 48px;
+  background-color: #fff;
+  text-align: left;
+  color: #ad45df;
+  font-size: 20px;
+  font-weight: bold;
+  border-bottom: 1px solid #f4f4f4;
+  padding-left: 20px;
+}
+.tshw_leftPart_content {
+  display: flex;
+}
+.content_item {
+  width: 210px;
+  height: 234px;
+  background-color: #fff;
+  border: 1px solid #fff;
+  border-right: 1px solid #f4f4f4;
+}
+.content_item:hover {
+  border: 1px solid #f40;
+}
+.item_info {
+  display: flex;
+  flex-direction: column;
+  margin: 15px 0 0 15px;
+}
+.item_info span:first-child {
+  font-size: 18px;
+  color: #3c3c3c;
+  height: 26px;
+  line-height: 26px;
+  font-weight: normal;
+}
+.item_info span:nth-child(2) {
+  font-size: 12px;
+  color: #999;
+  height: 22px;
+  line-height: 22px;
+  font-weight: normal;
+}
+.item_img {
+  margin-top: 9px;
+  padding-left: 30px;
+}
+.item_img img {
+  width: 150px;
+  height: 150px;
+}
+/* 右边图片部分 */
+.tshw_rightPart {
+  width: 300px;
+  height: 250px;
+  padding: 17px;
+  border: 1px solid #fff;
+  background: #fff;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.tshw_rightPart:hover {
+  border: 1px solid #f40;
+}
+

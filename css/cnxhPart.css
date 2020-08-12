@@ -1,0 +1,127 @@
+/* 中间猜你喜欢部分 */
+.center_cnxh {
+  width: 100%;
+  height: auto;
+  margin-top: 10px;
+}
+.center_cnxh_wrap {
+  width: 1190px;
+  height: auto;
+  margin: 0 auto;
+  background-color: #fff;
+}
+.cnxh_header {
+  width: 1190px;
+  background-color: #fff;
+  border-bottom: 1px solid #f4f4f4;
+  position: relative;
+  overflow: hidden;
+}
+.cnxh_header span {
+  display: block;
+  height: 22px;
+  line-height: 22px;
+  margin: 17px 18px;
+  text-align: left;
+  color: #ff9f00;
+  font-size: 20px;
+  font-weight: bold;
+}
+.cnxh_content {
+  width: 1190px;
+  height: auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+.cnxh_content_item {
+  width: 239px;
+  height: 330px;
+  box-sizing: border-box;
+  border: 1px solid #f4f4f4;
+  margin: -1px 0 0 -1px;
+  padding: 20px;
+}
+.cnxh_content_item:hover {
+  border: 1px solid #f40;
+  z-index: 1;
+}
+.cnxh_content_item_img img {
+  width: 197px;
+  height: 197px;
+  cursor: pointer;
+}
+.cnxh_content_item_line1 {
+  display: block;
+  height: 40px;
+  line-height: 20px;
+  margin: 8px 0;
+  color: #666;
+  font-size: 14px;
+  cursor: pointer;
+}
+.cnxh_line2_price {
+  float: left;
+  position: relative;
+  cursor: pointer;
+}
+.cnxh_line2_price span {
+  color: #ff5000;
+  position: absolute;
+  top: 7px;
+  left: -2px;
+  cursor: pointer;
+}
+.cnxh_line2_price em {
+  position: absolute;
+  top: 0;
+  left: 10px;
+  font-size: 22px;
+  font-style: normal;
+  color: #ff5000;
+  cursor: pointer;
+  font-family: normal;
+}
+.cnxh_line2_proceeds {
+  margin-top: 10px;
+  font-size: 12px;
+  color: #999;
+  float: right;
+  cursor: pointer;
+}
+.cnxh_footer {
+  height: 50px;
+  background: #f4f4f4;
+  position: relative;
+}
+.cnxh_end {
+  position: absolute;
+  text-align: center;
+  color: #ccccd0;
+  left: 50%;
+  width: 84px;
+  line-height: 20px;
+  font-size: 18px;
+  margin-left: -42px;
+  font-style: normal;
+  top: 20px;
+}
+.cnxh_end::before {
+  left: -70px;
+  content: " ";
+  position: absolute;
+  height: 0;
+  line-height: 0;
+  border-top: 1px solid #e6e6e6;
+  width: 60px;
+  top: 50%;
+}
+.cnxh_end::after {
+  right: -70px;
+  content: " ";
+  position: absolute;
+  height: 0;
+  line-height: 0;
+  border-top: 1px solid #e6e6e6;
+  width: 60px;
+  top: 50%;
+}
