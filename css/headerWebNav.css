@@ -18,9 +18,10 @@ li.webNavigation:hover div {
   left: -1102px;
   width: 1190px;
   height: 365px;
-  display: none;
+  display: block;
   border: 1px solid #eee;
   background-color: #fff;
+  z-index: 99999;
 }
 .hover_webNavigation_menu > div {
   float: left;
@@ -42,6 +43,25 @@ li.webNavigation:hover div {
 .hover_webNavigation_menu div:nth-child(4) {
   height: 265px;
 }
+.hover_webNavigation_menu div > ul {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  padding-left: 10px;
+}
+.hover_webNavigation_menu div ul > li {
+  display: inline-block;
+  text-align: center;
+  text-align: left;
+}
+.hover_webNavigation_menu div ul li > a {
+  display: inline-block;
+  color: #3c3c3c;
+  font-size: 14px;
+  height: 25px;
+  line-height: 25px;
+}
 /* 主题市场 */
 .hover_webNavigation_menu_themeMarket span {
   display: inline-block;
@@ -51,14 +71,9 @@ li.webNavigation:hover div {
   font-weight: 600;
 }
 .hover_webNavigation_menu_themeMarket ul > li {
-  display: inline-block;
-  width: 40px;
-  height: 25px;
-  line-height: 25px;
-  text-align: center;
-  margin: 0 10px;
+  width: 24%;
 }
-.hover_webNavigation_menu_themeMarket ul > li:hover {
+.hover_webNavigation_menu_themeMarket ul li > a:hover {
   background-color: #fc4505;
   border-radius: 5px;
   color: #fff;
@@ -73,20 +88,15 @@ li.webNavigation:hover div {
   font-weight: 600;
 }
 .hover_webNavigation_menu_charMarket ul > li {
-  display: inline-block;
-  font-size: 14px;
-  width: 70px;
-  height: 25px;
-  line-height: 25px;
-  text-align: center;
-  margin: 0 10px;
+  width: 33%;
 }
-.hover_webNavigation_menu_charMarket ul > li:hover {
+.hover_webNavigation_menu_charMarket ul li > a:hover {
   background-color: #a0b959;
   border-radius: 5px;
   color: #fff;
   cursor: pointer;
 }
+
 /* 阿里APP */
 .hover_webNavigation_menu_aliApp span {
   display: inline-block;
@@ -96,15 +106,9 @@ li.webNavigation:hover div {
   font-weight: 600;
 }
 .hover_webNavigation_menu_aliApp ul > li {
-  display: inline-block;
-  font-size: 14px;
-  width: 70px;
-  height: 25px;
-  line-height: 25px;
-  text-align: center;
-  margin: 0 10px;
+  width: 33%;
 }
-.hover_webNavigation_menu_aliApp ul > li:hover {
+.hover_webNavigation_menu_aliApp ul li > a:hover {
   background-color: #df61ab;
   border-radius: 5px;
   color: #fff;
@@ -119,15 +123,9 @@ li.webNavigation:hover div {
   font-weight: 600;
 }
 .hover_webNavigation_menu_recommend ul > li {
-  display: inline-block;
-  font-size: 14px;
-  width: 110px;
-  height: 25px;
-  line-height: 25px;
-  text-align: center;
-  margin: 0 10px;
+  width: 49%;
 }
-.hover_webNavigation_menu_recommend ul > li:hover {
+.hover_webNavigation_menu_recommend ul li > a:hover {
   background-color: #2e9fd8;
   border-radius: 5px;
   color: #fff;
