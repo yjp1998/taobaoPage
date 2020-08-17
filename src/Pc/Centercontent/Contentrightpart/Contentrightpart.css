@@ -1,0 +1,183 @@
+/* 最右边部分 */
+.center_content_right {
+  width: 290px;
+  height: 522px;
+  position: absolute;
+  right: 0;
+  top: 0;
+  background-color: #fff;
+}
+/* 右边成员部分 */
+.right_member {
+  width: 290px;
+  height: 137px;
+}
+.right_selfie_wrap {
+  width: 74px;
+  height: 56px;
+  margin: 5px auto;
+  display: block;
+}
+.right_selfie {
+  width: 50px;
+  height: 50px;
+  margin: 0 auto;
+  background-color: blue;
+  border: 3px solid #fff;
+  border-radius: 50%;
+  overflow: hidden;
+  cursor: pointer;
+}
+.right_member_hi {
+  display: block;
+  width: 290px;
+  height: 17px;
+  text-align: center;
+  color: #666;
+  font-size: 12px;
+}
+.right_member_tjb {
+  width: 290px;
+  height: 17px;
+  color: #ff5001;
+  text-align: center;
+  cursor: pointer;
+}
+.right_member_tjb > span {
+  background-color: #ffe4db;
+  border-radius: 9px;
+  font-size: 13px;
+  margin: 0 5px;
+}
+.right_member_button {
+  width: 290px;
+  height: 40px;
+  text-align: center;
+}
+.right_member_button > span {
+  color: #fff;
+  background-color: #ff5001;
+  border-radius: 4px;
+  display: inline-block;
+  width: 75px;
+  height: 25px;
+  margin: 10px 2px;
+  text-align: center;
+  line-height: 25px;
+  cursor: pointer;
+}
+.right_member_button span:first-child {
+  width: 98px;
+}
+/* 右边tipoff部分 */
+.right_tipoff {
+  width: 290px;
+  height: 65px;
+  margin: 10px 0;
+  cursor: pointer;
+}
+.right_tipoff img {
+  width: 290px;
+  height: 65px;
+}
+/* 右边通知部分 */
+.right_notice_title {
+  width: 276px;
+  height: 24px;
+  margin: 4px 2px;
+  padding: 0 8px;
+}
+.right_notice_title > li {
+  display: inline-block;
+  width: 32px;
+  height: 20px;
+  margin: 0 9px;
+  line-height: 20px;
+  text-align: center;
+  font-size: 12px;
+  font-weight: 700;
+}
+.right_notice_title > li:hover {
+  border-bottom: 2px solid #f40;
+  color: #f40;
+  cursor: pointer;
+}
+.right_notice_content {
+  width: 290px;
+  height: 37px;
+}
+.right_notice_content > ul {
+  display: inline-block;
+  width: 260px;
+  height: 25px;
+  padding: 6px 0;
+  margin: 0 12px;
+}
+.right_notice_content ul > li {
+  color: #ff5000;
+  width: 260px;
+  height: 25px;
+  line-height: 25px;
+  font-size: 13px;
+  overflow: hidden;
+  text-align: center;
+  font-weight: 700;
+}
+
+/* 右边app部分 */
+.right_app {
+  width: 290px;
+  height: 77px;
+}
+.right_app_text {
+  width: 290px;
+  height: 30px;
+  position: relative;
+}
+.right_app span:first-child {
+  height: 30px;
+  line-height: 30px;
+  font-size: 14px;
+  padding-left: 14px;
+  font-weight: 600;
+  position: absolute;
+  left: 0;
+  top: 3px;
+}
+.right_app span:nth-child(2) {
+  height: 30px;
+  line-height: 30px;
+  font-size: 12px;
+  position: absolute;
+  top: 2px;
+  right: 20px;
+  cursor: pointer;
+}
+.right_app span:nth-child(3) {
+  height: 30px;
+  line-height: 30px;
+  font-size: 12px;
+  position: absolute;
+  top: 2px;
+  right: 10px;
+  cursor: pointer;
+}
+.right_app_logo {
+  width: 320px;
+  height: 47px;
+  box-sizing: border-box;
+  margin: 5px 5px;
+  padding: 0 20px;
+  overflow: hidden;
+}
+.right_app_logo > div {
+  display: inline-block;
+  width: 32px;
+  height: 32px;
+  margin-right: 16px;
+  cursor: pointer;
+}
+.right_app_logo div > img {
+  width: 32px;
+  height: 32px;
+}

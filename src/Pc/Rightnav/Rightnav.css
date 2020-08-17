@@ -1,0 +1,74 @@
+/* 右侧导航栏 */
+.fixedTool_wrap {
+  position: absolute;
+  top: 550px;
+  right: 122px;
+}
+.fixedTool {
+  width: 50px;
+  height: auto;
+  background-color: #fff;
+  border-radius: 8px;
+  z-index: 101;
+  text-align: center;
+  margin-right: -30px;
+}
+.fixedTool .wangwang {
+  height: 36px;
+  width: 50px;
+  line-height: 36px;
+  text-align: center;
+  font-size: 32px;
+  color: #ff7f13;
+}
+.fixedTool a {
+  display: inline-block;
+  width: 34px;
+  height: 40px;
+  line-height: 17px;
+  padding: 10px 8px 0 8px;
+  text-align: center;
+  font-size: 13px;
+  color: #f40;
+  cursor: pointer;
+}
+.fixedTool a div {
+  padding-bottom: 6px;
+  border-bottom: 1px solid #efefef;
+}
+.fixedTool a:first-child:hover {
+  border-radius: 8px 8px 0 0;
+}
+.fixedTool a:last-child:hover {
+  border-radius: 0 0 8px 8px;
+}
+.fixedTool a:hover {
+  background-image: linear-gradient(135deg, #ff971b, #ff5000);
+  color: #fff !important;
+  font-weight: 700;
+}
+.fixedTool a:nth-child(2) {
+  line-height: 18px;
+}
+.fixedTool a:nth-child(3) {
+  line-height: 17px;
+}
+.fixedTool a:nth-child(4) {
+  line-height: 18px;
+  color: #a8c001;
+}
+.fixedTool a:nth-child(5) {
+  line-height: 17px;
+  color: #3c3c3c;
+}
+.fixedTool a:nth-child(5) i {
+  display: block;
+}
+.fixedTool a:nth-child(6) {
+  color: #3c3c3c;
+  line-height: 35px;
+}
+.fixedTool a:nth-child(6) {
+  border: none;
+  color: #3c3c3c;
+}

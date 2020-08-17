@@ -1,0 +1,448 @@
+/* 头部导航栏部分 */
+.header_nav {
+  width: 100%;
+  height: 36px;
+  background-color: #f5f5f5;
+  border-bottom: 1px solid #eee;
+  font-size: 12px;
+}
+.header_nav_container {
+  margin: 0 auto;
+  width: 1190px;
+  height: 35px;
+}
+/* 导航栏左边部分 */
+.header_nav_left {
+  float: left;
+  line-height: 36px;
+  display: flex;
+}
+.header_nav_left_item {
+  padding: 0 6px;
+  box-sizing: border-box;
+}
+.header_nav_left_item:hover {
+  color: #f40;
+  cursor: pointer;
+}
+/* 地址 */
+li.location {
+  position: relative;
+}
+li.location:hover {
+  z-index: 11;
+  background-color: #fff;
+}
+li.location span:nth-child(2) {
+  font-size: 10px;
+}
+li.location:hover ul {
+  display: block;
+}
+.hover_location_menu > li:hover {
+  background-color: #f5f5f5;
+  z-index: 100;
+}
+.hover_location_menu {
+  position: absolute;
+  left: 0px;
+  width: 250px;
+  height: 300px;
+  overflow: scroll;
+  display: none;
+  border: 1px solid #eee;
+  background-color: #fff;
+  box-sizing: border-box;
+  z-index: 10;
+}
+.hover_location_menu > li {
+  padding: 0 6px;
+  color: #3c3c3c;
+}
+/* 亲，请登录部分 */
+li.log_in span {
+  color: #f40;
+}
+/* 导航栏右边部分 */
+.header_nav_right {
+  float: right;
+  line-height: 36px;
+  display: flex;
+  position: relative;
+}
+.header_nav_right_item {
+  padding: 0 6px;
+}
+/* 我的淘宝 */
+.myTaobao:hover {
+  background-color: #fff;
+  cursor: pointer;
+  z-index: 100;
+}
+.myTaobao:hover > :first-child {
+  color: #f40;
+}
+li.myTaobao {
+  position: relative;
+}
+li.myTaobao span:nth-child(2) {
+  font-size: 10px;
+}
+li.myTaobao:hover ul {
+  display: block;
+}
+.hover_myTaobao_menu > li:hover {
+  background-color: #f5f5f5;
+  cursor: pointer;
+}
+.hover_myTaobao_menu {
+  position: absolute;
+  left: 0;
+  width: 100px;
+  height: 70px;
+  display: none;
+  background-color: #fff;
+  border: 1px solid #eee;
+}
+.hover_myTaobao_menu > li {
+  padding: 0 6px;
+}
+/* 购物车 */
+.shopCar span:first-child {
+  font-size: 14px;
+  color: #f40;
+}
+.shopCar span:nth-child(3) {
+  font-size: 10px;
+}
+.shopCar:hover {
+  color: #f40;
+  cursor: pointer;
+  z-index: 100;
+}
+/* 收藏 */
+.collection:hover {
+  background: #fff;
+  cursor: pointer;
+  z-index: 100;
+}
+.collection:hover > span {
+  color: #f40 !important;
+}
+.collection span:first-child {
+  font-size: 14px;
+  color: #9c9c9c;
+}
+.collection span:nth-child(3) {
+  font-size: 10px;
+}
+li.collection {
+  position: relative;
+}
+li.collection:hover ul {
+  display: block;
+}
+.hover_collection_menu > li:hover {
+  background-color: #f5f5f5;
+  cursor: pointer;
+  z-index: 100;
+}
+.hover_collection_menu {
+  position: absolute;
+  left: 0;
+  width: 75px;
+  height: 68px;
+  display: none;
+  border: 1px solid #eee;
+  background-color: #fff;
+}
+.hover_collection_menu > li {
+  padding: 0 6px;
+}
+/* 商品分类 */
+.category:hover {
+  cursor: pointer;
+  color: #f40;
+  z-index: 100;
+}
+/* 千牛卖家中心 */
+.qnSellerCenter:hover {
+  background: #fff;
+  z-index: 11;
+  cursor: pointer;
+}
+.qnSellerCenter:hover > span {
+  color: #f40 !important;
+}
+.qnSellerCenter span:nth-child(2) {
+  font-size: 10px;
+}
+li.qnSellerCenter {
+  position: relative;
+}
+li.qnSellerCenter:hover ul {
+  display: block;
+  cursor: pointer;
+}
+.hover_qnSellerCenter_menu > li:hover {
+  background-color: #f5f5f5;
+  cursor: pointer;
+}
+.hover_qnSellerCenter_menu {
+  position: absolute;
+  left: 0;
+  width: 85px;
+  height: 260px;
+  display: none;
+  border: 1px solid #eee;
+  background-color: #fff;
+}
+.hover_qnSellerCenter_menu > li {
+  padding: 0 6px;
+}
+/* 联系客服 */
+.customerService:hover {
+  background: #fff;
+  cursor: pointer;
+  z-index: 100;
+}
+.customerService:hover > span {
+  color: #f40;
+}
+li.customerService {
+  position: relative;
+}
+li.customerService:hover ul {
+  display: block;
+  cursor: pointer;
+}
+.hover_customerService_menu > li:hover {
+  background-color: #f5f5f5;
+  cursor: pointer;
+}
+.hover_customerService_menu {
+  position: absolute;
+  left: 0;
+  width: 72px;
+  height: 70px;
+  display: none;
+  border: 1px solid #eee;
+  background-color: #fff;
+}
+.hover_customerService_menu > li {
+  padding: 0 6px;
+}
+/* 头部导航栏部分 */
+.header_nav {
+  width: 100%;
+  height: 36px;
+  background-color: #f5f5f5;
+  border-bottom: 1px solid #eee;
+  font-size: 12px;
+}
+.header_nav_container {
+  margin: 0 auto;
+  width: 1190px;
+  height: 35px;
+}
+/* 导航栏左边部分 */
+.header_nav_left {
+  float: left;
+  line-height: 36px;
+  display: flex;
+}
+.header_nav_left_item {
+  padding: 0 6px;
+  box-sizing: border-box;
+}
+.header_nav_left_item:hover {
+  color: #f40;
+  cursor: pointer;
+}
+/* 地址 */
+li.location {
+  position: relative;
+}
+li.location:hover {
+  z-index: 11;
+  background-color: #fff;
+}
+li.location:hover ul {
+  display: block;
+}
+.hover_location_menu > li:hover {
+  background-color: #f5f5f5;
+  z-index: 100;
+}
+.hover_location_menu {
+  position: absolute;
+  left: 0px;
+  width: 250px;
+  height: 300px;
+  overflow: scroll;
+  display: none;
+  border: 1px solid #eee;
+  background-color: #fff;
+  box-sizing: border-box;
+  z-index: 10;
+}
+.hover_location_menu > li {
+  padding: 0 6px;
+  color: #3c3c3c;
+}
+
+/* 导航栏右边部分 */
+.header_nav_right {
+  float: right;
+  line-height: 36px;
+  display: flex;
+  position: relative;
+}
+.header_nav_right_item {
+  padding: 0 6px;
+}
+/* 我的淘宝 */
+.myTaobao:hover {
+  background-color: #fff;
+  cursor: pointer;
+  z-index: 100;
+}
+.myTaobao:hover > :first-child {
+  color: #f40;
+}
+li.myTaobao {
+  position: relative;
+}
+li.myTaobao:hover ul {
+  display: block;
+}
+.hover_myTaobao_menu > li:hover {
+  background-color: #f5f5f5;
+  cursor: pointer;
+}
+.hover_myTaobao_menu {
+  position: absolute;
+  left: 0;
+  width: 100px;
+  height: 70px;
+  display: none;
+  background-color: #fff;
+  border: 1px solid #eee;
+}
+.hover_myTaobao_menu > li {
+  padding: 0 6px;
+}
+/* 购物车 */
+.shopCar:hover {
+  color: #f40;
+  cursor: pointer;
+  z-index: 100;
+}
+/* 收藏 */
+.collection:hover {
+  background: #fff;
+  cursor: pointer;
+  z-index: 100;
+}
+.collection:hover > span {
+  color: #f40 !important;
+}
+li.collection {
+  position: relative;
+}
+li.collection:hover ul {
+  display: block;
+}
+.hover_collection_menu > li:hover {
+  background-color: #f5f5f5;
+  cursor: pointer;
+  z-index: 100;
+}
+.hover_collection_menu {
+  position: absolute;
+  left: 0;
+  width: 75px;
+  height: 68px;
+  display: none;
+  border: 1px solid #eee;
+  background-color: #fff;
+}
+.hover_collection_menu > li {
+  padding: 0 6px;
+}
+/* 商品分类 */
+.category:hover {
+  cursor: pointer;
+  color: #f40;
+  z-index: 100;
+}
+/* 千牛卖家中心 */
+.qnSellerCenter span:nth-child(2) {
+  font-size: 10px;
+}
+.qnSellerCenter:hover {
+  background: #fff;
+  z-index: 11;
+  cursor: pointer;
+}
+.qnSellerCenter:hover > span {
+  color: #f40 !important;
+}
+li.qnSellerCenter {
+  position: relative;
+}
+li.qnSellerCenter:hover ul {
+  display: block;
+  cursor: pointer;
+}
+.hover_qnSellerCenter_menu > li:hover {
+  background-color: #f5f5f5;
+  cursor: pointer;
+}
+.hover_qnSellerCenter_menu {
+  position: absolute;
+  left: 0;
+  width: 84px;
+  height: 260px;
+  display: none;
+  border: 1px solid #eee;
+  background-color: #fff;
+}
+.hover_qnSellerCenter_menu > li {
+  padding: 0 6px;
+}
+/* 联系客服 */
+.customerService span:nth-child(2) {
+  font-size: 10px;
+}
+.customerService:hover {
+  background: #fff;
+  cursor: pointer;
+  z-index: 100;
+}
+.customerService:hover > span {
+  color: #f40;
+}
+li.customerService {
+  position: relative;
+}
+li.customerService:hover ul {
+  display: block;
+  cursor: pointer;
+}
+.hover_customerService_menu > li:hover {
+  background-color: #f5f5f5;
+  cursor: pointer;
+}
+.hover_customerService_menu {
+  position: absolute;
+  left: 0;
+  width: 72px;
+  height: 70px;
+  display: none;
+  border: 1px solid #eee;
+  background-color: #fff;
+}
+.hover_customerService_menu > li {
+  padding: 0 6px;
+}

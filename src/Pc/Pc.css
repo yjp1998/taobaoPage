@@ -1,0 +1,15 @@
+@media screen and (max-width: 500px) {
+  .pc {
+    display: none;
+  }
+  .mobile {
+    display: block !important;
+    overflow-x: hidden;
+  }
+}
+@media screen and (min-width:501px) and (max-width:1190px){html{font-size:15px}}
+body {
+  background-color: #f4f4f4;
+  font: tahoma, arial, "Hiragino Sans GB", "\5b8b\4f53", sans-serif;
+  overflow-x: hidden;
+}

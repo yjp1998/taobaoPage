@@ -1,0 +1,136 @@
+/* 头部搜索栏部分 */
+.header_search {
+  position: sticky;
+  top: 0;
+  width: 100%;
+  height: 140px;
+  background-color: #fff;
+  z-index: 10;
+}
+.header_search_container {
+  width: 1190px;
+  margin: 0 auto;
+  height: 90px;
+}
+.header_search_container_wrap {
+  width: 1190px;
+  height: 110px;
+  margin: 0 auto;
+  padding-top: 30px;
+}
+.header_search_input {
+  position: relative;
+  height: 80px;
+  width: 320px;
+}
+/* logo部分 */
+.header_search_logo {
+  width: 190px;
+  height: 80px;
+  float: left;
+  margin-top: 8px;
+  margin-left: 25px;
+  background: url(http://img.alicdn.com/tfs/TB1_uT8a5ERMeJjSspiXXbZLFXa-143-59.png)
+    0 0 no-repeat;
+}
+/* 输入框部分 */
+.header_search_content {
+  width: 630px;
+  height: 100px;
+  margin-left: 258px;
+  margin-right: 302px;
+}
+.search_content_hd {
+  height: 62px;
+  width: 630px;
+}
+.content_hd_tabs {
+  width: 613px;
+  height: 22px;
+  margin-left: 17px;
+}
+.content_hd_tabs ul > li {
+  display: inline-block;
+  text-align: center;
+  width: 36px;
+  height: 22px;
+  line-height: 22px;
+  cursor: pointer;
+  color: #f40;
+  font-size: 13px;
+}
+.content_hd_panel {
+  width: 613px;
+  height: 40px;
+  position: relative;
+}
+.search_ft_panel_input {
+  border: 2px solid #ff5000;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+  border-right: none;
+  margin-right: 22px;
+  height: 36px;
+  overflow: hidden;
+}
+.search_ft_panel_input i:first-child {
+  position: relative;
+  top: 2px;
+  left: 14px;
+  font-size: 15px;
+  z-index: 1;
+}
+.search_ft_panel_input .camera {
+  position: relative;
+  top: 4px;
+  right: -12px;
+  font-size: 25px;
+  cursor: pointer;
+}
+.search_ft_panel_input > input {
+  padding: 5px 6px;
+  background-color: #fff;
+  height: 25px;
+  width: 480px;
+  text-indent: 10px;
+}
+.search_ft_btn {
+  height: 40px;
+  width: 74px;
+  z-index: 2;
+  position: absolute;
+  right: -20px;
+  top: 0;
+  text-align: center;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  overflow: hidden;
+}
+.search_ft_btn > button {
+  font-size: 18px;
+  font-weight: 700;
+  color: #fff;
+  background-color: #ff4200;
+  cursor: pointer;
+  border: none;
+  width: 100%;
+  height: 100%;
+}
+
+.search_content_ft {
+  width: 589px;
+  height: 18px;
+}
+.search_content_ft > a {
+  display: inline-block;
+  font-size: 12px;
+  cursor: pointer;
+  color: #000;
+  margin-left: 5px;
+}
+.search_content_ft > a:hover {
+  color: #f40;
+}
+.search_content_ft a:nth-child(3) {
+  color: #f40;
+}

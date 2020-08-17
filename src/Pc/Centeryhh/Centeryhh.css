@@ -1,0 +1,81 @@
+/* 中间有好货部分 */
+.center_youhaohuo {
+  width: 100%;
+  height: 358px;
+  margin-top: 10px;
+}
+.center_youhaohuo_wrap {
+  width: 1190px;
+  height: 358px;
+  margin: 0 auto;
+  background-color: #fff;
+}
+.youhaohuo_header {
+  width: 100%;
+  padding-left: 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  float: left;
+}
+.youhaohuo_header span {
+  height: 24px;
+  line-height: 24px;
+  color: #999;
+  font-size: 13px;
+  font-weight: 400;
+  margin-left: 8px;
+  float: left;
+}
+.youhaohuo_header img {
+  float: left;
+  width: 74px;
+  height: 24px;
+}
+.youhaohuo_content {
+  width: 1190px;
+  height: 294px;
+  box-sizing: border-box;
+  padding-left: 21px;
+  background-color: #fff;
+  float: left;
+}
+.youhaohuo_content ul {
+  display: flex;
+  justify-content: space-between;
+  width: 1163px;
+  height: 294px;
+}
+.youhaohuo_content ul li {
+  width: 180px;
+  height: 271px;
+  margin: 0 14px 17px 0;
+}
+.goodsList li:hover h4 {
+  color: #ff4400;
+}
+.goodsList li img:hover {
+  transition: opacity 0.2s;
+  opacity: 0.8;
+}
+.goodsInfo h4 {
+  margin-top: 5px;
+  font-size: 16px;
+  height: 28px;
+  line-height: 28px;
+  font-weight: normal;
+  color: #3c3c3c;
+  cursor: pointer;
+}
+.goodsInfo span {
+  line-height: 24px;
+  color: #999;
+  font-size: 14px;
+  overflow: hidden;
+  height: 24px;
+}
+.goodsInfo div {
+  line-height: 22px;
+  height: 22px;
+  margin-top: 12px;
+  color: #35b1ff;
+}

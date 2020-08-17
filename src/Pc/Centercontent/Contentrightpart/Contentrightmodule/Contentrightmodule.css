@@ -1,0 +1,360 @@
+/* 右边模块部分 */
+.right_module {
+  width: 288px;
+  height: 154px;
+}
+.right_module > ul {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.right_module ul > li {
+  height: 78px;
+  width: 73px;
+  margin: 0 -1px -1px 0 ;
+  box-sizing: border-box;
+  border: 1px solid #f4f4f4;
+  border-left: none;
+  position: relative;
+}
+.right_module ul li:nth-child(4) {
+  border-right: none;
+}
+.right_module ul li:nth-child(8) {
+  border-right: none;
+}
+.right_module ul li > span {
+  display: block;
+  text-align: center;
+  cursor: pointer;
+}
+/* 充话费部分 */
+.module_topUp span:first-child {
+  margin-top: 10px;
+  font-size: 25px;
+}
+.module_topUp span:nth-child(2) {
+  margin-top: 5px;
+  font-size: 13px;
+  color: #3c3c3c;
+}
+.topUp_hover {
+  width: 288px;
+  height: 159px;
+  position: absolute;
+  top: 76px;
+  left: -1px;
+  border: 1px solid #f40;
+  display: none;
+  background: #fff;
+  z-index: 1;
+}
+.module_topUp:hover {
+  border: 1px solid #f40;
+  border-bottom: 1px solid #fff;
+  /* z-index: 100; */
+}
+.module_topUp:hover .topUp_hover {
+  display: block;
+}
+.module_topUp .topUp_hover_header > span {
+  display: inline-block;
+  font-size: 13px;
+  color: #666;
+  margin: 6px 0 6px 19px;
+}
+.hover_topUp_number {
+  padding-left: 16px;
+}
+.hover_topUp_number span {
+  position: absolute;
+  top: 30px;
+  right: 95px;
+  cursor: pointer;
+}
+.hover_topUp input {
+  border: 1px solid #666;
+  font-size: 12px;
+  width: 180px;
+  height: 25px;
+  text-indent: 10px;
+}
+.hover_topUp_amount {
+  margin-top: -1px;
+  padding-left: 16px;
+}
+.hover_topUp_amount span {
+  position: absolute;
+  top: 60px;
+  right: 95px;
+  cursor: pointer;
+}
+.hover_topUp_price {
+  padding-left: 18px;
+  margin-top: 8px;
+  margin-bottom: 8px;
+  font-size: 13px;
+}
+.hover_topUp_price span:first-child {
+  color: #666;
+  font-size: 13px;
+}
+.hover_topUp_price span:nth-child(2) {
+  color: #999;
+}
+.hover_topUp_price span:nth-child(3) {
+  color: #f60;
+  font-weight: 700;
+  font-family: verdana, arial;
+}
+.hover_topUp_price_btn {
+  width: 71px;
+  height: 27px;
+  border-radius: 4px;
+  font-size: 12px;
+  font-weight: 700;
+  position: absolute;
+  bottom: 16px;
+  left: 15px;
+  border: none;
+  color: #fff;
+  background: #f22d00;
+  cursor: pointer;
+}
+/* 旅行部分 */
+.module_trip:hover {
+  border: 1px solid #f40;
+}
+.module_trip:hover .trip_hover {
+  display: block;
+}
+.module_trip span:first-child {
+  margin-top: 10px;
+  font-size: 25px;
+}
+.module_trip span:nth-child(2) {
+  margin-top: 5px;
+  font-size: 13px;
+  color: #3c3c3c;
+}
+.trip_hover {
+  width: 288px;
+  height: 159px;
+  position: absolute;
+  top: 76px;
+  left: -73px;
+  border: 1px solid #f40;
+  display: none;
+  background: #fff;
+  z-index: 1;
+}
+.trip_hover_header {
+  padding: 0 5px;
+}
+.module_trip .trip_hover_header > span {
+  display: inline-block;
+  font-size: 12px;
+  color: #666;
+  margin: 6px 0;
+  padding: 0 3px;
+}
+.trip_hover_type {
+  padding: 0 5px;
+  height: 20px;
+  line-height: 20px;
+}
+
+.trip_hover_type > div {
+  float: left;
+  margin-right: 15px;
+  font-size: 12px;
+}
+.trip_hover_type input {
+  margin: 2px 0 0 5px;
+}
+.trip_hover_type span {
+  color: #bbb;
+  font-size: 12px;
+}
+.trip_hover_location {
+  padding: 0 5px;
+}
+.trip_hover_setOut {
+  width: 120px;
+  height: 24px;
+  line-height: 24px;
+  border: 1px solid #ccc;
+  margin-right: 20px;
+  position: relative;
+}
+.trip_hover_setOut span {
+  font-size: 12px !important;
+  font-weight: normal;
+  padding: 0 3px;
+  color: #6b6b6b;
+  background-color: #f5f5f5;
+  position: absolute;
+  top: -10px;
+  left: 0;
+}
+.trip_hover_setOut input {
+  position: absolute;
+  top: 0;
+  left: 32px;
+  font-size: 13px;
+  width: 65px;
+  height: 20px;
+  line-height: 20px;
+  padding: 3px 20px 1px 3px;
+}
+.trip_hover_setOut i {
+  color: #ccc;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.trip_hover_arrive {
+  width: 120px;
+  height: 24px;
+  line-height: 24px;
+  border: 1px solid #ccc;
+  margin: -26px 3px 0 10px;
+  position: relative;
+  float: right;
+}
+.trip_hover_arrive span {
+  font-size: 12px !important;
+  font-weight: normal;
+  padding: 0 3px;
+  color: #6b6b6b;
+  background-color: #f5f5f5;
+  position: absolute;
+  top: -10px;
+  left: 0;
+}
+.trip_hover_arrive input {
+  position: absolute;
+  top: 0;
+  left: 32px;
+  font-size: 13px;
+  width: 65px;
+  height: 20px;
+  line-height: 20px;
+  padding: 3px 20px 1px 3px;
+}
+.trip_hover_arrive i {
+  color: #ccc;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.trip_hover_location > span {
+  float: left;
+  margin: -18px 0 0 130px !important;
+  font-size: 6px;
+  color: #ccc !important;
+}
+.trip_hover_date {
+  width: 120px;
+  height: 24px;
+  line-height: 24px;
+  border: 1px solid #ccc;
+  margin-right: 20px;
+  margin-top: 0;
+  position: relative;
+}
+.trip_hover_date span {
+  font-size: 12px !important;
+  font-weight: normal;
+  padding: 0 3px;
+  color: #6b6b6b;
+  background-color: #f5f5f5;
+  position: absolute;
+  top: -10px;
+  left: 0;
+}
+.trip_hover_date input {
+  position: absolute;
+  top: 0;
+  left: 32px;
+  font-size: 13px;
+  width: 65px;
+  height: 20px;
+  line-height: 20px;
+  padding: 3px 20px 1px 3px;
+}
+.trip_hover_date i {
+  color: #ccc;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.trip_hover_btn {
+  width: 46px;
+  height: 27px;
+  border-radius: 4px;
+  font-size: 12px;
+  font-weight: 600;
+  position: absolute;
+  bottom: 25px;
+  left: 5px;
+  border: none;
+  color: #fff;
+  background: #f40;
+  cursor: pointer;
+}
+/* 车险部分 */
+.module_carInsurance span:first-child {
+  margin-top: 10px;
+  font-size: 25px;
+}
+.module_carInsurance span:nth-child(2) {
+  margin-top: 5px;
+  font-size: 13px;
+  color: #3c3c3c;
+}
+.module_game span:first-child {
+  margin-top: 10px;
+  font-size: 25px;
+}
+.module_game span:nth-child(2) {
+  margin-top: 5px;
+  font-size: 13px;
+  color: #3c3c3c;
+}
+.module_lottery span:first-child {
+  margin-top: 10px;
+  font-size: 25px;
+}
+.module_lottery span:nth-child(2) {
+  margin-top: 5px;
+  font-size: 13px;
+  color: #3c3c3c;
+}
+.module_movie span:first-child {
+  margin-top: 10px;
+  font-size: 25px;
+}
+.module_movie span:nth-child(2) {
+  margin-top: 5px;
+  font-size: 13px;
+  color: #3c3c3c;
+}
+.module_hotel span:first-child {
+  margin-top: 10px;
+  font-size: 25px;
+}
+.module_hotel span:nth-child(2) {
+  margin-top: 5px;
+  font-size: 13px;
+  color: #3c3c3c;
+}
+.module_financing span:first-child {
+  margin-top: 10px;
+  font-size: 25px;
+}
+.module_financing span:nth-child(2) {
+  margin-top: 5px;
+  font-size: 13px;
+  color: #3c3c3c;
+}

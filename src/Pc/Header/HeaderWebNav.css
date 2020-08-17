@@ -1,0 +1,132 @@
+/* 网站导航 */
+.webNavigation:hover {
+  background: #fff;
+  cursor: pointer;
+  z-index: 100;
+}
+.webNavigation:hover > span {
+  color: #f40;
+}
+li.webNavigation {
+  position: relative;
+}
+li.webNavigation:hover div {
+  display: block;
+}
+.hover_webNavigation_menu {
+  position: absolute;
+  left: -1102px;
+  width: 1190px;
+  height: 365px;
+  display: none;
+  border: 1px solid #eee;
+  background-color: #fff;
+  z-index: 99999;
+}
+.hover_webNavigation_menu > div {
+  float: left;
+  width: 296px;
+}
+.hover_webNavigation_menu div:first-child {
+  border-right: 1px solid #dddddd;
+  height: 365px;
+  /* background-color: red; */
+}
+.hover_webNavigation_menu div:nth-child(2) {
+  height: 190px;
+  border-right: 1px solid #dddddd;
+}
+.hover_webNavigation_menu div:nth-child(3) {
+  height: 255px;
+  border-right: 1px solid #ddd;
+}
+.hover_webNavigation_menu div:nth-child(4) {
+  height: 265px;
+}
+.hover_webNavigation_menu div > ul {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  padding-left: 10px;
+}
+.hover_webNavigation_menu div ul > li {
+  display: inline-block;
+  text-align: center;
+  text-align: left;
+}
+.hover_webNavigation_menu div ul li > a {
+  display: inline-block;
+  color: #3c3c3c;
+  font-size: 14px;
+  height: 25px;
+  line-height: 25px;
+}
+/* 主题市场 */
+.hover_webNavigation_menu_themeMarket span {
+  display: inline-block;
+  margin-left: 10px;
+  font-size: 17px;
+  color: #fc4505;
+  font-weight: 600;
+}
+.hover_webNavigation_menu_themeMarket ul > li {
+  width: 24%;
+}
+.hover_webNavigation_menu_themeMarket ul li > a:hover {
+  background-color: #fc4505;
+  border-radius: 5px;
+  color: #fff;
+  cursor: pointer;
+}
+/* 特色市场 */
+.hover_webNavigation_menu_charMarket span {
+  display: inline-block;
+  margin-left: 10px;
+  font-size: 17px;
+  color: #a0b959;
+  font-weight: 600;
+}
+.hover_webNavigation_menu_charMarket ul > li {
+  width: 33%;
+}
+.hover_webNavigation_menu_charMarket ul li > a:hover {
+  background-color: #a0b959;
+  border-radius: 5px;
+  color: #fff;
+  cursor: pointer;
+}
+
+/* 阿里APP */
+.hover_webNavigation_menu_aliApp span {
+  display: inline-block;
+  margin-left: 10px;
+  font-size: 17px;
+  color: #df61ab;
+  font-weight: 600;
+}
+.hover_webNavigation_menu_aliApp ul > li {
+  width: 33%;
+}
+.hover_webNavigation_menu_aliApp ul li > a:hover {
+  background-color: #df61ab;
+  border-radius: 5px;
+  color: #fff;
+  cursor: pointer;
+}
+/* 精彩推荐集 */
+.hover_webNavigation_menu_recommend span {
+  display: inline-block;
+  margin-left: 10px;
+  font-size: 17px;
+  color: #2e9fd8;
+  font-weight: 600;
+}
+.hover_webNavigation_menu_recommend ul > li {
+  width: 49%;
+}
+.hover_webNavigation_menu_recommend ul li > a:hover {
+  background-color: #2e9fd8;
+  border-radius: 5px;
+  color: #fff;
+}
