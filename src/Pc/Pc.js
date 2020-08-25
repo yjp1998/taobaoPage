@@ -13,23 +13,31 @@ import Rightnav from './Rightnav/Rightnav';
 import Help from './Help/Help';
 import Footer from './Footer/Footer';
 
-function Pc() {
-  return (
-    <div className="pc">
-      <Header />
-      <Headersearch />
-      <Centernav />
-      <Centercontent />
-      <Centeryhh />
-      <Centerhdzb />
-      <Centertshw />
-      <Centerrmdp />
-      <Centercnxh />
-      <Rightnav />
-      <Help />
-      <Footer />
-    </div>
-  );
+class Pc extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+
+    }
+  }
+  render() {
+    return (
+      <div className="pc">
+        <Header />
+        <Headersearch />
+        <Centernav />
+        <Centercontent />
+        <Centeryhh />
+        <Centerhdzb />
+        <Centertshw />
+        <Centerrmdp />
+        <Centercnxh />
+        <Rightnav />
+        <Help />
+        <Footer />
+      </div>
+    );
+  }
 }
 
 export default Pc;

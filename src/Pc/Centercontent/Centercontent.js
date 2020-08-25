@@ -4,16 +4,24 @@ import Contentleftnav from './Contentleftnav/Contentleftnav';
 import Contentcenter from './Contentcenter/Contentcenter';
 import Contentrightpart from './Contentrightpart/Contentrightpart'
 
-function Centercontent() {
-  return (
-    <div class="center_content">
-      <div class="center_content_wrap">
-        <Contentleftnav />
-        <Contentcenter />
-        <Contentrightpart />
+class Centercontent extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+
+    }
+  }
+  render() {
+    return (
+      <div class="center_content">
+        <div class="center_content_wrap">
+          <Contentleftnav />
+          <Contentcenter />
+          <Contentrightpart />
+        </div>
       </div>
-    </div>
-  );
+    );
+  }
 }
 
 export default Centercontent;
