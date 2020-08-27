@@ -1,7 +1,7 @@
 import React from 'react';
-import './Contentrightmodule.css';
+import './index.css';
 
-class Contentrightmodule extends React.Component {
+class ContentRightModule extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -116,4 +116,4 @@ class Contentrightmodule extends React.Component {
 }
 
 
-export default Contentrightmodule;
+export default ContentRightModule;

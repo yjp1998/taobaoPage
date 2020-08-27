@@ -1,13 +1,10 @@
 import React from 'react';
-import './Header.css';
+import './index.css';
 import './HeaderWebNav.css';
 
 class Header extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-
-    }
+  constructor() {
+    super();
   }
   render() {
     return (

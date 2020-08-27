@@ -1,12 +1,9 @@
 import React from 'react';
-import './Rightnav.css';
+import './index.css';
 
 class Rightnav extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-
-    }
+  constructor() {
+    super();
   }
   render() {
     return (

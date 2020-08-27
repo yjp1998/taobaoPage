@@ -1,9 +1,9 @@
 import React from 'react';
-import './Centercnxh.css';
+import './index.css';
 
-class Centercnxh extends React.Component {
-  constructor(props) {
-    super(props);
+class CenterGuess extends React.Component {
+  constructor() {
+    super();
     this.state = {
       itemsInfo: []
     }
@@ -128,4 +128,4 @@ class Centercnxh extends React.Component {
   }
 }
 
-export default Centercnxh;
+export default CenterGuess;

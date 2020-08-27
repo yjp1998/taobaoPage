@@ -1,9 +1,9 @@
 import React from 'react';
-import './Contentcenter.css';
+import './index.css';
 
-class Contentcenter extends React.Component {
-  constructor(props) {
-    super(props);
+class ContentCenter extends React.Component {
+  constructor() {
+    super();
     this.state = {
 
     }
@@ -43,4 +43,4 @@ class Contentcenter extends React.Component {
   }
 }
 
-export default Contentcenter;
+export default ContentCenter;

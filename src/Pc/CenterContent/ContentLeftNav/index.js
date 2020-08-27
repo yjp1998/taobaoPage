@@ -1,12 +1,34 @@
 import React from 'react';
-import './Contentleftnav.css';
+import './index.css';
 
-class Centerleftnav extends React.Component {
-  constructor(props) {
-    super(props);
+class CenterLeftNav extends React.Component {
+  constructor() {
+    super();
     this.state = {
-
+      itemsInfo: []
     }
+  }
+  componentDidMount() {
+    setInterval(() => {
+      this.setState({
+        itemsInfo: [
+          {
+            itemUrl1: 'https://gw.alicdn.com/tfs/TB1_0WJcvWG3KVjSZFPXXXaiXXa-400-400.jpg',
+            itemUrl2: 'https://img.alicdn.com/imgextra/i4/3780459742/O1CN01LgzJSZ2Lpt0X5PZX4_!!3780459742.jpg_430x430q90.jpg',
+            itemUrl3: 'https://gw.alicdn.com/tfs/TB1zTLIXLBj_uVjSZFpXXc0SXXa-400-400.jpg',
+            itemUrl4: 'https://gw.alicdn.com/tfs/TB15cOwcBiE3KVjSZFMXXbQhVXa-400-400.jpg',
+            itemUrl5: 'https://gw.alicdn.com/tfs/TB1z2WxcEuF3KVjSZK9XXbVtXXa-400-400.jpg',
+            itemUrl6: 'https://gw.alicdn.com/tfs/TB1Z1yvcwmH3KVjSZKzXXb2OXXa-400-400.jpg',
+            title1: '连衣裙',
+            title2: '时尚套装',
+            title3: '衬衫',
+            title4: '短外套',
+            title5: 'T恤',
+            title6: '卫衣',
+          }
+        ]
+      })
+    }, 1000);
   }
   render() {
     return (
@@ -149,35 +171,36 @@ class Centerleftnav extends React.Component {
               </div>
             </div>
             <div class="nav_hover_rightPart">
-              <div class="nav_hover_rightPart_wrap">
-                <span>猜你喜欢</span>
-                <div>
-                  <img src="https://gw.alicdn.com/tfs/TB1_0WJcvWG3KVjSZFPXXXaiXXa-400-400.jpg" alt="" />
-                  连衣裙
-                </div>
-                <div>
-                  <img
-                    src="https://img.alicdn.com/imgextra/i4/3780459742/O1CN01LgzJSZ2Lpt0X5PZX4_!!3780459742.jpg_430x430q90.jpg"
-                    alt="" />
-                  时尚套装
-                </div>
-                <div>
-                  <img src="https://gw.alicdn.com/tfs/TB1zTLIXLBj_uVjSZFpXXc0SXXa-400-400.jpg" alt="" />
-                  衬衫
-                </div>
-                <div>
-                  <img src="https://gw.alicdn.com/tfs/TB15cOwcBiE3KVjSZFMXXbQhVXa-400-400.jpg" alt="" />
-                  短外套
-                </div>
-                <div>
-                  <img src="https://gw.alicdn.com/tfs/TB1z2WxcEuF3KVjSZK9XXbVtXXa-400-400.jpg" alt="" />
-                  T恤
-                </div>
-                <div>
-                  <img src="https://gw.alicdn.com/tfs/TB1Z1yvcwmH3KVjSZKzXXb2OXXa-400-400.jpg" alt="" />
-                  卫衣
-                </div>
-              </div>
+              {
+                this.state.itemsInfo.map((item) => (
+                  <div class="nav_hover_rightPart_wrap">
+                    <div>
+                      <img src={item.itemUrl1} alt="" />
+                      {item.title1}
+                    </div>
+                    <div>
+                      <img src={item.itemUrl1} alt="" />
+                      {item.title2}
+                    </div>
+                    <div>
+                      <img src={item.itemUrl1} alt="" />
+                      {item.title3}
+                    </div>
+                    <div>
+                      <img src={item.itemUrl1} alt="" />
+                      {item.title4}
+                    </div>
+                    <div>
+                      <img src={item.itemUrl1} alt="" />
+                      {item.title5}                      
+                    </div>
+                    <div>
+                      <img src={item.itemUrl1} alt="" />
+                      {item.title6}
+                    </div>
+                  </div>
+                ))
+              }
             </div>
           </div>
         </li>
@@ -275,39 +298,36 @@ class Centerleftnav extends React.Component {
               </div>
             </div>
             <div class="nav_hover_rightPart">
-              <div class="nav_hover_rightPart_wrap">
-                <span>猜你喜欢</span>
-                <div>
-                  <img src="https://img.alicdn.com/imgextra/i1/676197649/O1CN01ptzntu26NI3YX1qtM_!!676197649.jpg"
-                    alt="" />
-                  女士运动鞋
-                </div>
-                <div>
-                  <img src="https://img.alicdn.com/imgextra/i4/676197649/O1CN01TFvvWd26NI3W0qxy8_!!676197649.jpg"
-                    alt="" />
-                  女士单鞋
-                </div>
-                <div>
-                  <img src="https://img.alicdn.com/imgextra/i2/676197649/O1CN01zmwLXc26NI3VFfeFm_!!676197649.jpg"
-                    alt="" />
-                  女士帆布鞋
-                </div>
-                <div>
-                  <img src="https://img.alicdn.com/imgextra/i3/676197649/O1CN01Sz9X0D26NI3Up0icY_!!676197649.jpg"
-                    alt="" />
-                  女士高跟鞋
-                </div>
-                <div>
-                  <img src="https://img.alicdn.com/imgextra/i2/676197649/O1CN01ybHkiu26NI3YX3avq_!!676197649.jpg"
-                    alt="" />
-                  女士凉鞋
-                </div>
-                <div>
-                  <img src="https://img.alicdn.com/imgextra/i1/676197649/O1CN01KOnFM626NI3UgvM9X_!!676197649.jpg"
-                    alt="" />
-                  女士马丁靴
-                </div>
-              </div>
+              {
+                this.state.itemsInfo.map((item) => (
+                  <div class="nav_hover_rightPart_wrap">
+                    <div>
+                      <img src={item.itemUrl1} alt="" />
+                      {item.title1}
+                    </div>
+                    <div>
+                      <img src={item.itemUrl1} alt="" />
+                      {item.title2}
+                    </div>
+                    <div>
+                      <img src={item.itemUrl1} alt="" />
+                      {item.title3}
+                    </div>
+                    <div>
+                      <img src={item.itemUrl1} alt="" />
+                      {item.title4}
+                    </div>
+                    <div>
+                      <img src={item.itemUrl1} alt="" />
+                      {item.title5}                      
+                    </div>
+                    <div>
+                      <img src={item.itemUrl1} alt="" />
+                      {item.title6}
+                    </div>
+                  </div>
+                ))
+              }
             </div>
           </div>
         </li>
@@ -399,33 +419,36 @@ class Centerleftnav extends React.Component {
               </div>
             </div>
             <div class="nav_hover_rightPart">
-              <div class="nav_hover_rightPart_wrap">
-                <span>猜你喜欢</span>
-                <div>
-                  <img src="https://gw.alicdn.com/tfs/TB1Ka2bcEGF3KVjSZFoXXbmpFXa-800-800.jpg" alt="" />
-                  儿童套装
-                </div>
-                <div>
-                  <img src="https://gw.alicdn.com/tfs/TB19js3cBWD3KVjSZKPXXap7FXa-800-800.jpg" alt="" />
-                  益智玩具
-                </div>
-                <div>
-                  <img src="https://gw.alicdn.com/tfs/TB1JNtAXwFY.1VjSZFnXXcFHXXa-800-800.jpg" alt="" />
-                  孕妇装
-                </div>
-                <div>
-                  <img src="https://gw.alicdn.com/tfs/TB1AyuFcHus3KVjSZKbXXXqkFXa-800-800.jpg" alt="" />
-                  纸尿裤
-                </div>
-                <div>
-                  <img src="https://gw.alicdn.com/tfs/TB1niiRdaSs3KVjSZPiXXcsiVXa-800-800.jpg" alt="" />
-                  儿童电动车
-                </div>
-                <div>
-                  <img src="https://gw.alicdn.com/tfs/TB1U7Azbkxz61VjSZFtXXaDSVXa-800-800.jpg" alt="" />
-                  哈衣爬服
-                </div>
-              </div>
+              {
+                this.state.itemsInfo.map((item) => (
+                  <div class="nav_hover_rightPart_wrap">
+                    <div>
+                      <img src={item.itemUrl1} alt="" />
+                      {item.title1}
+                    </div>
+                    <div>
+                      <img src={item.itemUrl1} alt="" />
+                      {item.title2}
+                    </div>
+                    <div>
+                      <img src={item.itemUrl1} alt="" />
+                      {item.title3}
+                    </div>
+                    <div>
+                      <img src={item.itemUrl1} alt="" />
+                      {item.title4}
+                    </div>
+                    <div>
+                      <img src={item.itemUrl1} alt="" />
+                      {item.title5}                      
+                    </div>
+                    <div>
+                      <img src={item.itemUrl1} alt="" />
+                      {item.title6}
+                    </div>
+                  </div>
+                ))
+              }
             </div>
           </div>
         </li>
@@ -602,40 +625,36 @@ class Centerleftnav extends React.Component {
               </div>
             </div>
             <div class="nav_hover_rightPart">
-              <div class="nav_hover_rightPart_wrap">
-                <span>猜你喜欢</span>
-                <div>
-                  <img src="https://img.alicdn.com/tfs/TB1sjubavWG3KVjSZPcXXbkbXXa-788-787.png_400x400q80.jpg"
-                    alt="" />
-                  短外套
-                </div>
-                <div>
-                  <img src="https://img.alicdn.com/tfs/TB1PUp.aBOD3KVjSZFFXXcn9pXa-1124-1124.jpg_400x400q80.jpg"
-                    alt="" />
-                  T恤
-                </div>
-                <div>
-                  <img
-                    src="https://gd4.alicdn.com/imgextra/i4/1862729413/O1CN01nzOepQ2JPCfMLGfhU_!!1862729413.jpg_400x400.jpg"
-                    alt="" />
-                  卫衣
-                </div>
-                <div>
-                  <img src="https://img.alicdn.com/tfs/TB1eO0SaCSD3KVjSZFKXXb10VXa-800-800.jpg_400x400q80.jpg"
-                    alt="" />
-                  休闲长裤
-                </div>
-                <div>
-                  <img src="https://img.alicdn.com/tfs/TB15.B.aECF3KVjSZJnXXbnHFXa-760-762.png_400x400q80.jpg"
-                    alt="" />
-                  衬衫
-                </div>
-                <div>
-                  <img src="https://img.alicdn.com/tfs/TB1FoGnarys3KVjSZFnXXXFzpXa-800-800.jpg_400x400q80.jpg"
-                    alt="" />
-                  西服
-                </div>
-              </div>
+              {
+                this.state.itemsInfo.map((item) => (
+                  <div class="nav_hover_rightPart_wrap">
+                    <div>
+                      <img src={item.itemUrl1} alt="" />
+                      {item.title1}
+                    </div>
+                    <div>
+                      <img src={item.itemUrl1} alt="" />
+                      {item.title2}
+                    </div>
+                    <div>
+                      <img src={item.itemUrl1} alt="" />
+                      {item.title3}
+                    </div>
+                    <div>
+                      <img src={item.itemUrl1} alt="" />
+                      {item.title4}
+                    </div>
+                    <div>
+                      <img src={item.itemUrl1} alt="" />
+                      {item.title5}                      
+                    </div>
+                    <div>
+                      <img src={item.itemUrl1} alt="" />
+                      {item.title6}
+                    </div>
+                  </div>
+                ))
+              }
             </div>
           </div>
         </li>
@@ -776,35 +795,36 @@ class Centerleftnav extends React.Component {
               </div>
             </div>
             <div class="nav_hover_rightPart">
-              <div class="nav_hover_rightPart_wrap">
-                <span>猜你喜欢</span>
-                <div>
-                  <img src="https://gw.alicdn.com/tfs/TB1_0WJcvWG3KVjSZFPXXXaiXXa-400-400.jpg" alt="" />
-                  连衣裙
-                </div>
-                <div>
-                  <img
-                    src="https://img.alicdn.com/imgextra/i4/3780459742/O1CN01LgzJSZ2Lpt0X5PZX4_!!3780459742.jpg_430x430q90.jpg"
-                    alt="" />
-                  时尚套装
-                </div>
-                <div>
-                  <img src="https://gw.alicdn.com/tfs/TB1zTLIXLBj_uVjSZFpXXc0SXXa-400-400.jpg" alt="" />
-                  衬衫
-                </div>
-                <div>
-                  <img src="https://gw.alicdn.com/tfs/TB15cOwcBiE3KVjSZFMXXbQhVXa-400-400.jpg" alt="" />
-                  短外套
-                </div>
-                <div>
-                  <img src="https://gw.alicdn.com/tfs/TB1z2WxcEuF3KVjSZK9XXbVtXXa-400-400.jpg" alt="" />
-                  T恤
-                </div>
-                <div>
-                  <img src="https://gw.alicdn.com/tfs/TB1Z1yvcwmH3KVjSZKzXXb2OXXa-400-400.jpg" alt="" />
-                  卫衣
-                </div>
-              </div>
+              {
+                this.state.itemsInfo.map((item) => (
+                  <div class="nav_hover_rightPart_wrap">
+                    <div>
+                      <img src={item.itemUrl1} alt="" />
+                      {item.title1}
+                    </div>
+                    <div>
+                      <img src={item.itemUrl1} alt="" />
+                      {item.title2}
+                    </div>
+                    <div>
+                      <img src={item.itemUrl1} alt="" />
+                      {item.title3}
+                    </div>
+                    <div>
+                      <img src={item.itemUrl1} alt="" />
+                      {item.title4}
+                    </div>
+                    <div>
+                      <img src={item.itemUrl1} alt="" />
+                      {item.title5}                      
+                    </div>
+                    <div>
+                      <img src={item.itemUrl1} alt="" />
+                      {item.title6}
+                    </div>
+                  </div>
+                ))
+              }
             </div>
           </div>
         </li>
@@ -945,35 +965,36 @@ class Centerleftnav extends React.Component {
               </div>
             </div>
             <div class="nav_hover_rightPart">
-              <div class="nav_hover_rightPart_wrap">
-                <span>猜你喜欢</span>
-                <div>
-                  <img src="https://gw.alicdn.com/tfs/TB1_0WJcvWG3KVjSZFPXXXaiXXa-400-400.jpg" alt="" />
-                  连衣裙
-                </div>
-                <div>
-                  <img
-                    src="https://img.alicdn.com/imgextra/i4/3780459742/O1CN01LgzJSZ2Lpt0X5PZX4_!!3780459742.jpg_430x430q90.jpg"
-                    alt="" />
-                  时尚套装
-                </div>
-                <div>
-                  <img src="https://gw.alicdn.com/tfs/TB1zTLIXLBj_uVjSZFpXXc0SXXa-400-400.jpg" alt="" />
-                  衬衫
-                </div>
-                <div>
-                  <img src="https://gw.alicdn.com/tfs/TB15cOwcBiE3KVjSZFMXXbQhVXa-400-400.jpg" alt="" />
-                  短外套
-                </div>
-                <div>
-                  <img src="https://gw.alicdn.com/tfs/TB1z2WxcEuF3KVjSZK9XXbVtXXa-400-400.jpg" alt="" />
-                  T恤
-                </div>
-                <div>
-                  <img src="https://gw.alicdn.com/tfs/TB1Z1yvcwmH3KVjSZKzXXb2OXXa-400-400.jpg" alt="" />
-                  卫衣
-                </div>
-              </div>
+              {
+                this.state.itemsInfo.map((item) => (
+                  <div class="nav_hover_rightPart_wrap">
+                    <div>
+                      <img src={item.itemUrl1} alt="" />
+                      {item.title1}
+                    </div>
+                    <div>
+                      <img src={item.itemUrl1} alt="" />
+                      {item.title2}
+                    </div>
+                    <div>
+                      <img src={item.itemUrl1} alt="" />
+                      {item.title3}
+                    </div>
+                    <div>
+                      <img src={item.itemUrl1} alt="" />
+                      {item.title4}
+                    </div>
+                    <div>
+                      <img src={item.itemUrl1} alt="" />
+                      {item.title5}                      
+                    </div>
+                    <div>
+                      <img src={item.itemUrl1} alt="" />
+                      {item.title6}
+                    </div>
+                  </div>
+                ))
+              }
             </div>
           </div>
         </li>
@@ -1113,35 +1134,36 @@ class Centerleftnav extends React.Component {
               </div>
             </div>
             <div class="nav_hover_rightPart">
-              <div class="nav_hover_rightPart_wrap">
-                <span>猜你喜欢</span>
-                <div>
-                  <img src="https://gw.alicdn.com/tfs/TB1_0WJcvWG3KVjSZFPXXXaiXXa-400-400.jpg" alt="" />
-                  连衣裙
-                </div>
-                <div>
-                  <img
-                    src="https://img.alicdn.com/imgextra/i4/3780459742/O1CN01LgzJSZ2Lpt0X5PZX4_!!3780459742.jpg_430x430q90.jpg"
-                    alt="" />
-                  时尚套装
-                </div>
-                <div>
-                  <img src="https://gw.alicdn.com/tfs/TB1zTLIXLBj_uVjSZFpXXc0SXXa-400-400.jpg" alt="" />
-                  衬衫
-                </div>
-                <div>
-                  <img src="https://gw.alicdn.com/tfs/TB15cOwcBiE3KVjSZFMXXbQhVXa-400-400.jpg" alt="" />
-                  短外套
-                </div>
-                <div>
-                  <img src="https://gw.alicdn.com/tfs/TB1z2WxcEuF3KVjSZK9XXbVtXXa-400-400.jpg" alt="" />
-                  T恤
-                </div>
-                <div>
-                  <img src="https://gw.alicdn.com/tfs/TB1Z1yvcwmH3KVjSZKzXXb2OXXa-400-400.jpg" alt="" />
-                  卫衣
-                </div>
-              </div>
+              {
+                this.state.itemsInfo.map((item) => (
+                  <div class="nav_hover_rightPart_wrap">
+                    <div>
+                      <img src={item.itemUrl1} alt="" />
+                      {item.title1}
+                    </div>
+                    <div>
+                      <img src={item.itemUrl1} alt="" />
+                      {item.title2}
+                    </div>
+                    <div>
+                      <img src={item.itemUrl1} alt="" />
+                      {item.title3}
+                    </div>
+                    <div>
+                      <img src={item.itemUrl1} alt="" />
+                      {item.title4}
+                    </div>
+                    <div>
+                      <img src={item.itemUrl1} alt="" />
+                      {item.title5}                      
+                    </div>
+                    <div>
+                      <img src={item.itemUrl1} alt="" />
+                      {item.title6}
+                    </div>
+                  </div>
+                ))
+              }
             </div>
           </div>
         </li>
@@ -1282,35 +1304,36 @@ class Centerleftnav extends React.Component {
               </div>
             </div>
             <div class="nav_hover_rightPart">
-              <div class="nav_hover_rightPart_wrap">
-                <span>猜你喜欢</span>
-                <div>
-                  <img src="https://gw.alicdn.com/tfs/TB1_0WJcvWG3KVjSZFPXXXaiXXa-400-400.jpg" alt="" />
-                  连衣裙
-                </div>
-                <div>
-                  <img
-                    src="https://img.alicdn.com/imgextra/i4/3780459742/O1CN01LgzJSZ2Lpt0X5PZX4_!!3780459742.jpg_430x430q90.jpg"
-                    alt="" />
-                  时尚套装
-                </div>
-                <div>
-                  <img src="https://gw.alicdn.com/tfs/TB1zTLIXLBj_uVjSZFpXXc0SXXa-400-400.jpg" alt="" />
-                  衬衫
-                </div>
-                <div>
-                  <img src="https://gw.alicdn.com/tfs/TB15cOwcBiE3KVjSZFMXXbQhVXa-400-400.jpg" alt="" />
-                  短外套
-                </div>
-                <div>
-                  <img src="https://gw.alicdn.com/tfs/TB1z2WxcEuF3KVjSZK9XXbVtXXa-400-400.jpg" alt="" />
-                  T恤
-                </div>
-                <div>
-                  <img src="https://gw.alicdn.com/tfs/TB1Z1yvcwmH3KVjSZKzXXb2OXXa-400-400.jpg" alt="" />
-                  卫衣
-                </div>
-              </div>
+              {
+                this.state.itemsInfo.map((item) => (
+                  <div class="nav_hover_rightPart_wrap">
+                    <div>
+                      <img src={item.itemUrl1} alt="" />
+                      {item.title1}
+                    </div>
+                    <div>
+                      <img src={item.itemUrl1} alt="" />
+                      {item.title2}
+                    </div>
+                    <div>
+                      <img src={item.itemUrl1} alt="" />
+                      {item.title3}
+                    </div>
+                    <div>
+                      <img src={item.itemUrl1} alt="" />
+                      {item.title4}
+                    </div>
+                    <div>
+                      <img src={item.itemUrl1} alt="" />
+                      {item.title5}                      
+                    </div>
+                    <div>
+                      <img src={item.itemUrl1} alt="" />
+                      {item.title6}
+                    </div>
+                  </div>
+                ))
+              }
             </div>
           </div>
         </li>
@@ -1451,35 +1474,36 @@ class Centerleftnav extends React.Component {
               </div>
             </div>
             <div class="nav_hover_rightPart">
-              <div class="nav_hover_rightPart_wrap">
-                <span>猜你喜欢</span>
-                <div>
-                  <img src="https://gw.alicdn.com/tfs/TB1_0WJcvWG3KVjSZFPXXXaiXXa-400-400.jpg" alt="" />
-                  连衣裙
-                </div>
-                <div>
-                  <img
-                    src="https://img.alicdn.com/imgextra/i4/3780459742/O1CN01LgzJSZ2Lpt0X5PZX4_!!3780459742.jpg_430x430q90.jpg"
-                    alt="" />
-                  时尚套装
-                </div>
-                <div>
-                  <img src="https://gw.alicdn.com/tfs/TB1zTLIXLBj_uVjSZFpXXc0SXXa-400-400.jpg" alt="" />
-                  衬衫
-                </div>
-                <div>
-                  <img src="https://gw.alicdn.com/tfs/TB15cOwcBiE3KVjSZFMXXbQhVXa-400-400.jpg" alt="" />
-                  短外套
-                </div>
-                <div>
-                  <img src="https://gw.alicdn.com/tfs/TB1z2WxcEuF3KVjSZK9XXbVtXXa-400-400.jpg" alt="" />
-                  T恤
-                </div>
-                <div>
-                  <img src="https://gw.alicdn.com/tfs/TB1Z1yvcwmH3KVjSZKzXXb2OXXa-400-400.jpg" alt="" />
-                  卫衣
-                </div>
-              </div>
+              {
+                this.state.itemsInfo.map((item) => (
+                  <div class="nav_hover_rightPart_wrap">
+                    <div>
+                      <img src={item.itemUrl1} alt="" />
+                      {item.title1}
+                    </div>
+                    <div>
+                      <img src={item.itemUrl1} alt="" />
+                      {item.title2}
+                    </div>
+                    <div>
+                      <img src={item.itemUrl1} alt="" />
+                      {item.title3}
+                    </div>
+                    <div>
+                      <img src={item.itemUrl1} alt="" />
+                      {item.title4}
+                    </div>
+                    <div>
+                      <img src={item.itemUrl1} alt="" />
+                      {item.title5}                      
+                    </div>
+                    <div>
+                      <img src={item.itemUrl1} alt="" />
+                      {item.title6}
+                    </div>
+                  </div>
+                ))
+              }
             </div>
           </div>
         </li>
@@ -1620,35 +1644,36 @@ class Centerleftnav extends React.Component {
               </div>
             </div>
             <div class="nav_hover_rightPart">
-              <div class="nav_hover_rightPart_wrap">
-                <span>猜你喜欢</span>
-                <div>
-                  <img src="https://gw.alicdn.com/tfs/TB1_0WJcvWG3KVjSZFPXXXaiXXa-400-400.jpg" alt="" />
-                  连衣裙
-                </div>
-                <div>
-                  <img
-                    src="https://img.alicdn.com/imgextra/i4/3780459742/O1CN01LgzJSZ2Lpt0X5PZX4_!!3780459742.jpg_430x430q90.jpg"
-                    alt="" />
-                  时尚套装
-                </div>
-                <div>
-                  <img src="https://gw.alicdn.com/tfs/TB1zTLIXLBj_uVjSZFpXXc0SXXa-400-400.jpg" alt="" />
-                  衬衫
-                </div>
-                <div>
-                  <img src="https://gw.alicdn.com/tfs/TB15cOwcBiE3KVjSZFMXXbQhVXa-400-400.jpg" alt="" />
-                  短外套
-                </div>
-                <div>
-                  <img src="https://gw.alicdn.com/tfs/TB1z2WxcEuF3KVjSZK9XXbVtXXa-400-400.jpg" alt="" />
-                  T恤
-                </div>
-                <div>
-                  <img src="https://gw.alicdn.com/tfs/TB1Z1yvcwmH3KVjSZKzXXb2OXXa-400-400.jpg" alt="" />
-                  卫衣
-                </div>
-              </div>
+              {
+                this.state.itemsInfo.map((item) => (
+                  <div class="nav_hover_rightPart_wrap">
+                    <div>
+                      <img src={item.itemUrl1} alt="" />
+                      {item.title1}
+                    </div>
+                    <div>
+                      <img src={item.itemUrl1} alt="" />
+                      {item.title2}
+                    </div>
+                    <div>
+                      <img src={item.itemUrl1} alt="" />
+                      {item.title3}
+                    </div>
+                    <div>
+                      <img src={item.itemUrl1} alt="" />
+                      {item.title4}
+                    </div>
+                    <div>
+                      <img src={item.itemUrl1} alt="" />
+                      {item.title5}                      
+                    </div>
+                    <div>
+                      <img src={item.itemUrl1} alt="" />
+                      {item.title6}
+                    </div>
+                  </div>
+                ))
+              }
             </div>
           </div>
         </li>
@@ -1788,35 +1813,36 @@ class Centerleftnav extends React.Component {
               </div>
             </div>
             <div class="nav_hover_rightPart">
-              <div class="nav_hover_rightPart_wrap">
-                <span>猜你喜欢</span>
-                <div>
-                  <img src="https://gw.alicdn.com/tfs/TB1_0WJcvWG3KVjSZFPXXXaiXXa-400-400.jpg" alt="" />
-                  连衣裙
-                </div>
-                <div>
-                  <img
-                    src="https://img.alicdn.com/imgextra/i4/3780459742/O1CN01LgzJSZ2Lpt0X5PZX4_!!3780459742.jpg_430x430q90.jpg"
-                    alt="" />
-                  时尚套装
-                </div>
-                <div>
-                  <img src="https://gw.alicdn.com/tfs/TB1zTLIXLBj_uVjSZFpXXc0SXXa-400-400.jpg" alt="" />
-                  衬衫
-                </div>
-                <div>
-                  <img src="https://gw.alicdn.com/tfs/TB15cOwcBiE3KVjSZFMXXbQhVXa-400-400.jpg" alt="" />
-                  短外套
-                </div>
-                <div>
-                  <img src="https://gw.alicdn.com/tfs/TB1z2WxcEuF3KVjSZK9XXbVtXXa-400-400.jpg" alt="" />
-                  T恤
-                </div>
-                <div>
-                  <img src="https://gw.alicdn.com/tfs/TB1Z1yvcwmH3KVjSZKzXXb2OXXa-400-400.jpg" alt="" />
-                  卫衣
-                </div>
-              </div>
+              {
+                this.state.itemsInfo.map((item) => (
+                  <div class="nav_hover_rightPart_wrap">
+                    <div>
+                      <img src={item.itemUrl1} alt="" />
+                      {item.title1}
+                    </div>
+                    <div>
+                      <img src={item.itemUrl1} alt="" />
+                      {item.title2}
+                    </div>
+                    <div>
+                      <img src={item.itemUrl1} alt="" />
+                      {item.title3}
+                    </div>
+                    <div>
+                      <img src={item.itemUrl1} alt="" />
+                      {item.title4}
+                    </div>
+                    <div>
+                      <img src={item.itemUrl1} alt="" />
+                      {item.title5}                      
+                    </div>
+                    <div>
+                      <img src={item.itemUrl1} alt="" />
+                      {item.title6}
+                    </div>
+                  </div>
+                ))
+              }
             </div>
           </div>
         </li>
@@ -1956,35 +1982,36 @@ class Centerleftnav extends React.Component {
               </div>
             </div>
             <div class="nav_hover_rightPart">
-              <div class="nav_hover_rightPart_wrap">
-                <span>猜你喜欢</span>
-                <div>
-                  <img src="https://gw.alicdn.com/tfs/TB1_0WJcvWG3KVjSZFPXXXaiXXa-400-400.jpg" alt="" />
-                  连衣裙
-                </div>
-                <div>
-                  <img
-                    src="https://img.alicdn.com/imgextra/i4/3780459742/O1CN01LgzJSZ2Lpt0X5PZX4_!!3780459742.jpg_430x430q90.jpg"
-                    alt="" />
-                  时尚套装
-                </div>
-                <div>
-                  <img src="https://gw.alicdn.com/tfs/TB1zTLIXLBj_uVjSZFpXXc0SXXa-400-400.jpg" alt="" />
-                  衬衫
-                </div>
-                <div>
-                  <img src="https://gw.alicdn.com/tfs/TB15cOwcBiE3KVjSZFMXXbQhVXa-400-400.jpg" alt="" />
-                  短外套
-                </div>
-                <div>
-                  <img src="https://gw.alicdn.com/tfs/TB1z2WxcEuF3KVjSZK9XXbVtXXa-400-400.jpg" alt="" />
-                  T恤
-                </div>
-                <div>
-                  <img src="https://gw.alicdn.com/tfs/TB1Z1yvcwmH3KVjSZKzXXb2OXXa-400-400.jpg" alt="" />
-                  卫衣
-                </div>
-              </div>
+              {
+                this.state.itemsInfo.map((item) => (
+                  <div class="nav_hover_rightPart_wrap">
+                    <div>
+                      <img src={item.itemUrl1} alt="" />
+                      {item.title1}
+                    </div>
+                    <div>
+                      <img src={item.itemUrl1} alt="" />
+                      {item.title2}
+                    </div>
+                    <div>
+                      <img src={item.itemUrl1} alt="" />
+                      {item.title3}
+                    </div>
+                    <div>
+                      <img src={item.itemUrl1} alt="" />
+                      {item.title4}
+                    </div>
+                    <div>
+                      <img src={item.itemUrl1} alt="" />
+                      {item.title5}                      
+                    </div>
+                    <div>
+                      <img src={item.itemUrl1} alt="" />
+                      {item.title6}
+                    </div>
+                  </div>
+                ))
+              }
             </div>
           </div>
         </li>
@@ -2125,35 +2152,36 @@ class Centerleftnav extends React.Component {
               </div>
             </div>
             <div class="nav_hover_rightPart">
-              <div class="nav_hover_rightPart_wrap">
-                <span>猜你喜欢</span>
-                <div>
-                  <img src="https://gw.alicdn.com/tfs/TB1_0WJcvWG3KVjSZFPXXXaiXXa-400-400.jpg" alt="" />
-                  连衣裙
-                </div>
-                <div>
-                  <img
-                    src="https://img.alicdn.com/imgextra/i4/3780459742/O1CN01LgzJSZ2Lpt0X5PZX4_!!3780459742.jpg_430x430q90.jpg"
-                    alt="" />
-                  时尚套装
-                </div>
-                <div>
-                  <img src="https://gw.alicdn.com/tfs/TB1zTLIXLBj_uVjSZFpXXc0SXXa-400-400.jpg" alt="" />
-                  衬衫
-                </div>
-                <div>
-                  <img src="https://gw.alicdn.com/tfs/TB15cOwcBiE3KVjSZFMXXbQhVXa-400-400.jpg" alt="" />
-                  短外套
-                </div>
-                <div>
-                  <img src="https://gw.alicdn.com/tfs/TB1z2WxcEuF3KVjSZK9XXbVtXXa-400-400.jpg" alt="" />
-                  T恤
-                </div>
-                <div>
-                  <img src="https://gw.alicdn.com/tfs/TB1Z1yvcwmH3KVjSZKzXXb2OXXa-400-400.jpg" alt="" />
-                  卫衣
-                </div>
-              </div>
+              {
+                this.state.itemsInfo.map((item) => (
+                  <div class="nav_hover_rightPart_wrap">
+                    <div>
+                      <img src={item.itemUrl1} alt="" />
+                      {item.title1}
+                    </div>
+                    <div>
+                      <img src={item.itemUrl1} alt="" />
+                      {item.title2}
+                    </div>
+                    <div>
+                      <img src={item.itemUrl1} alt="" />
+                      {item.title3}
+                    </div>
+                    <div>
+                      <img src={item.itemUrl1} alt="" />
+                      {item.title4}
+                    </div>
+                    <div>
+                      <img src={item.itemUrl1} alt="" />
+                      {item.title5}                      
+                    </div>
+                    <div>
+                      <img src={item.itemUrl1} alt="" />
+                      {item.title6}
+                    </div>
+                  </div>
+                ))
+              }
             </div>
           </div>
         </li>
@@ -2294,35 +2322,36 @@ class Centerleftnav extends React.Component {
               </div>
             </div>
             <div class="nav_hover_rightPart">
-              <div class="nav_hover_rightPart_wrap">
-                <span>猜你喜欢</span>
-                <div>
-                  <img src="https://gw.alicdn.com/tfs/TB1_0WJcvWG3KVjSZFPXXXaiXXa-400-400.jpg" alt="" />
-                  连衣裙
-                </div>
-                <div>
-                  <img
-                    src="https://img.alicdn.com/imgextra/i4/3780459742/O1CN01LgzJSZ2Lpt0X5PZX4_!!3780459742.jpg_430x430q90.jpg"
-                    alt="" />
-                  时尚套装
-                </div>
-                <div>
-                  <img src="https://gw.alicdn.com/tfs/TB1zTLIXLBj_uVjSZFpXXc0SXXa-400-400.jpg" alt="" />
-                  衬衫
-                </div>
-                <div>
-                  <img src="https://gw.alicdn.com/tfs/TB15cOwcBiE3KVjSZFMXXbQhVXa-400-400.jpg" alt="" />
-                  短外套
-                </div>
-                <div>
-                  <img src="https://gw.alicdn.com/tfs/TB1z2WxcEuF3KVjSZK9XXbVtXXa-400-400.jpg" alt="" />
-                  T恤
-                </div>
-                <div>
-                  <img src="https://gw.alicdn.com/tfs/TB1Z1yvcwmH3KVjSZKzXXb2OXXa-400-400.jpg" alt="" />
-                  卫衣
-                </div>
-              </div>
+              {
+                this.state.itemsInfo.map((item) => (
+                  <div class="nav_hover_rightPart_wrap">
+                    <div>
+                      <img src={item.itemUrl1} alt="" />
+                      {item.title1}
+                    </div>
+                    <div>
+                      <img src={item.itemUrl1} alt="" />
+                      {item.title2}
+                    </div>
+                    <div>
+                      <img src={item.itemUrl1} alt="" />
+                      {item.title3}
+                    </div>
+                    <div>
+                      <img src={item.itemUrl1} alt="" />
+                      {item.title4}
+                    </div>
+                    <div>
+                      <img src={item.itemUrl1} alt="" />
+                      {item.title5}                      
+                    </div>
+                    <div>
+                      <img src={item.itemUrl1} alt="" />
+                      {item.title6}
+                    </div>
+                  </div>
+                ))
+              }
             </div>
           </div>
         </li>
@@ -2400,33 +2429,36 @@ class Centerleftnav extends React.Component {
               </div>
             </div>
             <div class="nav_hover_rightPart">
-              <div class="nav_hover_rightPart_wrap">
-                <span>猜你喜欢</span>
-                <div>
-                  <img src="http://img.alicdn.com/bao/uploaded/i4/TB1sAUOTpzqK1RjSZFCSuvbxVXa.jpg" alt="" />
-                  项链
-                </div>
-                <div>
-                  <img src="http://img.alicdn.com/bao/uploaded/i2/TB1NlmMMSzqK1RjSZFLSuwn2XXa.jpg" alt="" />
-                  耳饰
-                </div>
-                <div>
-                  <img src="http://img.alicdn.com/bao/uploaded/i2/TB1Hgp.dAfb_uJkSmRySuvWxVXa.jpg" alt="" />
-                  戒指
-                </div>
-                <div>
-                  <img src="http://img.alicdn.com/bao/uploaded/i1/TB1jxDiTRLoK1RjSZFuSutn0XXa.jpg" alt="" />
-                  瑞士腕表
-                </div>
-                <div>
-                  <img src="https://gw.alicdn.com/tfs/TB1caJdcEz1gK0jSZLeXXb9kVXa-800-800.jpg" alt="" />
-                  棒球帽
-                </div>
-                <div>
-                  <img src="http://img.alicdn.com/bao/uploaded/i2/TB1sAVcOOrpK1RjSZFhSutSdXXa.jpg" alt="" />
-                  太阳镜
-                </div>
-              </div>
+              {
+                this.state.itemsInfo.map((item) => (
+                  <div class="nav_hover_rightPart_wrap">
+                    <div>
+                      <img src={item.itemUrl1} alt="" />
+                      {item.title1}
+                    </div>
+                    <div>
+                      <img src={item.itemUrl1} alt="" />
+                      {item.title2}
+                    </div>
+                    <div>
+                      <img src={item.itemUrl1} alt="" />
+                      {item.title3}
+                    </div>
+                    <div>
+                      <img src={item.itemUrl1} alt="" />
+                      {item.title4}
+                    </div>
+                    <div>
+                      <img src={item.itemUrl1} alt="" />
+                      {item.title5}                      
+                    </div>
+                    <div>
+                      <img src={item.itemUrl1} alt="" />
+                      {item.title6}
+                    </div>
+                  </div>
+                ))
+              }
             </div>
           </div>
         </li>
@@ -2436,4 +2468,4 @@ class Centerleftnav extends React.Component {
   }
 }
 
-export default Centerleftnav;
+export default CenterLeftNav;

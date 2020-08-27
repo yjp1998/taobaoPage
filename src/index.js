@@ -1,8 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import Pc from './Pc/Pc';
-import Mobile from './Mobile/Mobile'
+import Pc from './Pc/index';
+import Mobile from './Mobile/index'
 import * as serviceWorker from './serviceWorker';
 import './assets/fonts/iconfont.css'
 

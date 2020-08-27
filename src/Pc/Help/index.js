@@ -1,12 +1,9 @@
 import React from 'react';
-import './Help.css';
+import './index.css';
 
 class Help extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state ={
-
-    }
+  constructor() {
+    super();
   }
   render() {
     return (

@@ -1,12 +1,9 @@
 import React from 'react';
-import './Headersearch.css';
+import './index.css';
 
 class Headersearch extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-
-    }
+  constructor() {
+    super();
   }
   render() {
     return (

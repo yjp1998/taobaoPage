@@ -1,9 +1,9 @@
 import React from 'react';
-import './Centernav.css';
+import './index.css';
 
-class Centernav extends React.Component {
-  constructor(props) {
-    super(props);
+class CenterNav extends React.Component {
+  constructor() {
+    super();
     this.state = {}
   }
   render() {
@@ -36,4 +36,4 @@ class Centernav extends React.Component {
   }
 }
 
-export default Centernav;
+export default CenterNav;

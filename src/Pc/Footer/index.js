@@ -1,12 +1,9 @@
 import React from 'react';
-import './Footer.css';
+import './index.css';
 
 class Footer extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      
-    }
+  constructor() {
+    super();
   }
   render() {
     return (

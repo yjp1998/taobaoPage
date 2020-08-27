@@ -1,9 +1,9 @@
 import React from 'react';
-import './Centertshw.css';
+import './index.css';
 
-class Centertshw extends React.Component {
-  constructor(props) {
-    super(props);
+class CentertCharateristic extends React.Component {
+  constructor() {
+    super();
     this.state = {
       itemsInfo: []
     }
@@ -70,4 +70,4 @@ class Centertshw extends React.Component {
   }
 }
 
-export default Centertshw;
+export default CentertCharateristic;

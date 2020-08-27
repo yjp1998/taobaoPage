@@ -1,13 +1,10 @@
 import React from 'react';
-import Contentrightmodule from './Contentrightmodule/Contentrightmodule'
-import './Contentrightpart.css';
+import ContentRightModule from './ContentRightModule/index'
+import './index.css';
 
-class Contentrightpart extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-
-    }
+class ContentRightPart extends React.Component {
+  constructor() {
+    super();
   }
   render() {
     return (
@@ -54,7 +51,7 @@ class Contentrightpart extends React.Component {
           </ul>
         </div>
       </div>
-      <Contentrightmodule />
+      <ContentRightModule />
       <div class="right_app">
         <div class="right_app_text">
           <span>阿里APP</span>
@@ -94,4 +91,4 @@ class Contentrightpart extends React.Component {
   }
 }
 
-export default Contentrightpart;
+export default ContentRightPart;

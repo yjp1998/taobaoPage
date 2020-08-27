@@ -1,9 +1,9 @@
 import React from 'react';
-import './Centerrmdp.css';
+import './index.css';
 
-class Centerrmdp extends React.Component {
-  constructor(props) {
-    super(props);
+class CenterHotSell extends React.Component {
+  constructor() {
+    super();
     this.state = {
       itemsInfo: []
     }
@@ -167,4 +167,4 @@ class Centerrmdp extends React.Component {
   }
 }
 
-export default Centerrmdp;
+export default CenterHotSell;
